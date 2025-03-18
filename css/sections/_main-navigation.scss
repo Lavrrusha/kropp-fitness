@@ -1,0 +1,29 @@
+.main-navigation {
+
+    &__list {
+        display: flex;
+        column-gap: 50px;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        height: 90px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        column-gap: 7px;
+    }
+
+    &__link.is-current::after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: currentColor;
+        border-radius: 50%;
+        display: grid;
+    }
+
+}

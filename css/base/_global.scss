@@ -6,6 +6,22 @@ body {
     line-height: 1.75;
 }
 
+a {
+    color: var(--color-light);
+}
+
+a:hover {
+    color: var(--color-light-grey);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
 h1,
 h2,
 h3,
