@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline: 32px;
 
     &__actions {
         display: flex;
@@ -9,6 +10,8 @@
     }
 
     &__logotype {
+        display: flex;
+        align-items: center;
         flex-shrink: 0;
     }
 
@@ -37,6 +40,40 @@
         background-color: currentColor;
         box-shadow: 15px 0 0 currentColor;
     }
-
 }
 
+@media (max-width: 1024px) {
+    .header {
+        flex-wrap: wrap;
+        padding-top: 20px;
+        row-gap: 10px;
+        padding-inline: 15px;
+    }
+
+    .main-navigation {
+        order: 1;
+        flex-basis: 100%;
+    }
+
+    .main-navigation__link {
+        height: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding-top: 10px;
+    }
+
+    .header__actions {
+        column-gap: 15px;
+    }
+
+    .main-navigation__list {
+        column-gap: 24px;
+     }
+
+    .main-navigation__link {
+     height: 32px;
+    }
+}

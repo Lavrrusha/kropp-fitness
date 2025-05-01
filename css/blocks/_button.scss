@@ -15,3 +15,9 @@
         background-color: var(--color-light-grey);
     }
 }
+
+@media (max-width: 767px) {
+    .button {
+        padding-inline: 10px;
+    }
+}
