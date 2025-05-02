@@ -22,7 +22,7 @@
         row-gap: 4px;
         padding-left: 8px;
         width: 40px;
-        height: 40px;
+        aspect-ratio: 1;
         background-color: transparent;
         border: var(--border);
         color: var(--color-light);
@@ -48,6 +48,7 @@
         padding-top: 20px;
         row-gap: 10px;
         padding-inline: 15px;
+        background-color: var(--color-dark-alternate);
     }
 
     .main-navigation {

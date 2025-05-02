@@ -54,6 +54,20 @@ h6 {
   text-transform: uppercase;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /**
   Нормализация блочной модели
  */
@@ -256,6 +270,7 @@ svg * {
 }
 :root {
   --color-dark: #000;
+  --color-dark-alternate: #131619;
   --color-light: #fff;
   --color-dark-grey: #404040;
   --color-light-grey: #c4c4c4;
@@ -326,7 +341,7 @@ svg * {
   row-gap: 4px;
   padding-left: 8px;
   width: 40px;
-  height: 40px;
+  aspect-ratio: 1;
   background-color: transparent;
   border: var(--border);
   color: var(--color-light);
@@ -349,6 +364,7 @@ svg * {
     padding-top: 20px;
     row-gap: 10px;
     padding-inline: 15px;
+    background-color: var(--color-dark-alternate);
   }
   .main-navigation {
     order: 1;
@@ -396,6 +412,7 @@ svg * {
   content: "";
   width: 5px;
   height: 5px;
+  aspect-ratio: 1;
   background-color: currentColor;
   border-radius: 50%;
   display: grid;
@@ -419,6 +436,10 @@ svg * {
 @media (max-width: 767px) {
   .header {
     padding-top: 10px;
+  }
+  .header__actions {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
   }
   .main-navigation__list {
     -moz-column-gap: 24px;
