@@ -9,59 +9,78 @@
 </head>
 
 <body>
-    <header class="header wrapper">
-        <div>
-            <a class="header__logotype" href="#"></a>
-            <img class="header__image" src="./image/header-logo-kropp.png" alt="Kropp Logotype" width="135" height="25"
-                loading="lazy">
-        </div>
+    <div class="wrapper">
+        <header class="header">
+            <div>
+                <a class="header__logotype" href="#"></a>
+                <img class="header__image" src="./image/header-logo-kropp.png" alt="Kropp Logotype" width="135"
+                    height="25" loading="lazy">
+            </div>
 
-        <nav class="main-navigation">
-            <ul class="main-navigation__list">
-                <li class="main-navigation__icon">
-                    <a class="main-navigation__link is-current" href="#">Home</a>
-                </li>
-                <li class="main-navigation__icon">
-                    <a class="main-navigation__link" href="#">Pages</a>
-                </li>
-                <li class="main-navigation__icon">
-                    <a class="main-navigation__link" href="#">Portfolio</a>
-                </li>
-                <li class="main-navigation__icon">
-                    <a class="main-navigation__link" href="#">Blog</a>
-                </li>
-                <li class="main-navigation__icon">
-                    <a class="main-navigation__link" href="#">Shop</a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="main-navigation">
+                <ul class="main-navigation__list">
+                    <li class="main-navigation__icon">
+                        <a class="main-navigation__link is-current" href="#">Home</a>
+                    </li>
+                    <li class="main-navigation__icon">
+                        <a class="main-navigation__link" href="#">Pages</a>
+                    </li>
+                    <li class="main-navigation__icon">
+                        <a class="main-navigation__link" href="#">Portfolio</a>
+                    </li>
+                    <li class="main-navigation__icon">
+                        <a class="main-navigation__link" href="#">Blog</a>
+                    </li>
+                    <li class="main-navigation__icon">
+                        <a class="main-navigation__link" href="#">Shop</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <div class="header__actions">
-            <button class="header__button button" type="button">Book now</button>
-            <button class="header__burger" type="button" title="Open menu">
-                <span class="visually-hidden">Open menu</span>
-                <span class="header__burger-button-line"></span>
-                <span class="header__burger-button-line"></span>
-                <span class="header__burger-button-line"></span>
-            </button>
-        </div>
-    </header>
+            <div class="header__actions">
+                <button class="header__button button" type="button">Book now</button>
+                <button class="header__burger" type="button" title="Open menu">
+                    <span class="visually-hidden">Open menu</span>
+                    <span class="header__burger-button-line"></span>
+                    <span class="header__burger-button-line"></span>
+                    <span class="header__burger-button-line"></span>
+                </button>
+            </div>
+        </header>
+    </div>
 
     <main class="content">
         <h1 class="visually-hidden">Kropp Fitness Club</h1>
         <section class="banner">
-            <h2 class="visually-hidden">Upcomming events</h2>
-            <div class="banner__body">
-                <div class="banner__info">
-                    New event <br>
-                    coming up / <time datetime="06-07">june 7</time> - <time datetime="06-13">13</time>
+            <div class="wrapper">
+                <h2 class="visually-hidden">Upcomming events</h2>
+                <div class="banner__body">
+                    <div class="banner__info">
+                        New event <br>
+                        coming up / <time datetime="06-07">june 7</time>&nbsp;-&nbsp;<time datetime="06-13">13</time>
+                    </div>
+                    <h3 class="banner__title">Crossfit</h3>
                 </div>
-                <h3 class="banner__title">Crossfit</h3>
-            </div>
-            <div class="banner__pagination">
+                
+                <div class="banner__pagination">
+                    <ul class="banner__pagination-list">
+                        <li class="banner__pagination-item">
+                            <button class="banner__pagination-button" type="button"></button>
+                        </li>
+                    </ul>
+                    <ul class="banner__pagination-list">
+                        <li class="banner__pagination-item">
+                            <button class="banner__pagination-button" type="button"></button>
+                        </li>
+                    </ul>
+                    <ul class="banner__pagination-list">
+                        <li class="banner__pagination-item">
+                            <button class="banner__pagination-button is-current" type="button"></button>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
-
         </section>
     </main>
 </body>

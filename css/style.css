@@ -21,7 +21,7 @@
   font-display: swap;
 }
 body {
-  background-color: var(--color-dark);
+  background-color: var(--color-dark-alternate);
   font-family: var(--font-family-base);
   color: var(--color-light-grey);
   font-size: 16px;
@@ -282,6 +282,7 @@ svg * {
   --container-width: 1300px;
   --container-padding-x: 15px;
   --transition-duration: 0.2s;
+  --header-height: 90px;
 }
 
 .list-reset {
@@ -323,6 +324,7 @@ svg * {
   justify-content: space-between;
   align-items: center;
   padding-inline: 32px;
+  min-height: var(--header-height);
 }
 .header__actions {
   display: flex;
@@ -399,7 +401,7 @@ svg * {
 .main-navigation__link {
   display: inline-flex;
   align-items: center;
-  height: 90px;
+  height: var(--header-height);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -447,5 +449,81 @@ svg * {
   }
   .main-navigation__link {
     height: 32px;
+  }
+}
+.banner {
+  padding: 36px 70px;
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: var(--color-light);
+}
+.banner__body {
+  text-transform: uppercase;
+}
+.banner__info {
+  display: flex;
+  align-items: end;
+  font-size: clamp(16px, 1.56vw, 30px);
+  line-height: 1.27;
+  font-weight: 700;
+}
+.banner__info::before {
+  content: "";
+  width: clamp(60px, 10.1vw, 194px);
+  aspect-ratio: 1;
+  margin-right: 30px;
+  background: url("../../icon/bold-arrow-down-right.svg") center/contain no-repeat;
+}
+.banner__title {
+  font-size: 260px;
+  line-height: 1;
+  font-size: min(13.54vw, 260px);
+}
+.banner__pagination {
+  display: flex;
+  justify-content: center;
+}
+.banner__pagination-item {
+  display: flex;
+}
+.banner__pagination-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 7px;
+  background-color: transparent;
+}
+.banner__pagination-button::after {
+  content: "";
+  width: 10px;
+  aspect-ratio: 1;
+  border: var(--border);
+  border-radius: 50%;
+  transition-duration: var(--transition-duration);
+}
+.banner__pagination-button.is-current::after {
+  background-color: var(--color-light);
+}
+.banner__pagination-button:not(.is-current):hover::after {
+  border-color: var(--color-light-grey);
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    padding-inline: 15px;
+  }
+  .banner__title {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .banner__info {
+    margin-bottom: 5px;
+  }
+  .banner__info::before {
+    margin-right: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
