@@ -1,0 +1,37 @@
+.motivation {
+
+    &__card-body {
+        padding-left: 35px;
+    }
+
+    &__card-description {
+        max-width: 400px;
+    }
+
+    &__card-description:not(:last-child) {
+        margin-bottom: 37px;
+    }
+
+    &__item:nth-child(odd) {
+        background-color: var(--color-dark);
+    }
+
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: clamp(30px, 10.42vw, 200px);
+    }
+
+    &__card-title:not(:last-child) {
+        margin-bottom: 14px;
+    }
+
+    &__item:nth-child(even) &__card:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    &__card-img {
+        margin-block: -60px;
+    }
+}

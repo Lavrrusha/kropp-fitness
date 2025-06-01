@@ -10,11 +10,38 @@
     border: none;
     border-radius: var(--border-radius);
     white-space: nowrap;
+    text-decoration: none;
 
     &:hover {
         background-color: var(--color-light-grey);
     }
 }
+
+.button.transparent {
+    position: relative;
+    height: var(--input-height);
+    padding-left: 37px;
+    padding-right: 80px;
+    background-color: transparent;
+    border: var(--border);
+}
+
+.button.transparent::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    aspect-ratio: 1;
+    background: url('../../icon/arrow-top-right.svg') center/70% no-repeat;
+    border: var(--border);
+    border-radius: 50%;
+    right: 0;
+}
+
+.button.transparent:hover {
+    color: var(--color-dark);
+    background-color: var(--color-light-grey);
+}
+
 
 @media (max-width: 767px) {
     .button {
