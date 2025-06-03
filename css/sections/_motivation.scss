@@ -35,3 +35,47 @@
         margin-block: -60px;
     }
 }
+
+@media (max-width: 1919px) {
+    .motivation__card-img {
+        margin-block: -20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .motivation__card {
+        padding-block: 50px;
+    }
+
+    .motivation__card-img {
+        max-width: 30%;
+        height: auto;
+        margin-block: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .motivation__card,
+    .motivation__item:nth-child(even) .motivation__card:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    .motivation__card {
+        padding-block: 30px;
+    }
+
+    .motivation__card-img {
+        max-width: 60%;
+    }
+
+    .motivation__card {
+        padding-block: 30px;
+        row-gap: 30px;
+    }
+
+    &__card-description:not(:last-child) {
+        margin-bottom: 20px;
+
+    }
+}

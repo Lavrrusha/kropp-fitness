@@ -381,6 +381,11 @@ svg * {
   -webkit-text-stroke: 1px var(--color-light-grey);
 }
 
+@media (max-width: 767px) {
+  .title-medium {
+    font-size: clamp(20px, 2.08vw, 40px);
+  }
+}
 .wrapper {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
@@ -622,4 +627,36 @@ svg * {
 }
 .motivation__card-img {
   margin-block: -60px;
+}
+
+@media (max-width: 1919px) {
+  .motivation__card-img {
+    margin-block: -20px;
+  }
+}
+@media (max-width: 1024px) {
+  .motivation__card {
+    padding-block: 50px;
+  }
+  .motivation__card-img {
+    max-width: 30%;
+    height: auto;
+    margin-block: 0;
+  }
+}
+@media (max-width: 767px) {
+  .motivation__card,
+  .motivation__item:nth-child(even) .motivation__card:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+  .motivation__card {
+    padding-block: 30px;
+  }
+  .motivation__card-img {
+    max-width: 60%;
+  }
+  .motivation__card {
+    padding-block: 30px;
+    row-gap: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
