@@ -60,6 +60,7 @@ h5,
 h6 {
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--color-light);
 }
 
 .visually-hidden {
@@ -291,6 +292,7 @@ svg * {
   --container-padding-x: 15px;
   --transition-duration: 0.2s;
   --header-height: 90px;
+  --trainingTypesItemBgIconSize: 80px;
 }
 
 .list-reset {
@@ -350,7 +352,6 @@ svg * {
 .title-medium {
   font-size: 40px;
   line-height: 1.3;
-  color: var(--color-light);
 }
 
 .backdropt-title {
@@ -659,4 +660,31 @@ svg * {
     padding-block: 30px;
     row-gap: 30px;
   }
+  .motivation__card-description:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.training-types {
+  position: relative;
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-top: 70px;
+  padding-bottom: 120px;
+  background-color: var(--color-dark);
+}
+.training-types__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 60px;
+}
+.training-types__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+  background: url(../../icon/tranparent-arrow-bottom-left.svg) 100% 0/var(--trainingTypesItemBgIconSize) no-repeat;
+  padding-top: var(--trainingTypesItemBgIconSize);
+}
+.training-types__image {
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
