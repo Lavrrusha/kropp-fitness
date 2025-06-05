@@ -687,4 +687,19 @@ svg * {
 }
 .training-types__image {
   height: 100%;
+}
+
+@media (max-width: 1280px) {
+  .training-types__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .training-types__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .training-types__item {
+    row-gap: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */

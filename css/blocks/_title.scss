@@ -33,7 +33,6 @@
 
 @media (max-width: 767px) {
     .title-medium {
-    font-size: clamp(20px, 2.08vw, 40px);
-    
-}
+        font-size: clamp(20px, 2.08vw, 40px);
+    }
 }
