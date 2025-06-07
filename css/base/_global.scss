@@ -41,6 +41,30 @@ h6 {
     color: var(--color-light);
 }
 
+.input {
+    width: 100%;
+    height: var(--input-height);
+    padding-inline: 25px;
+    background-color: transparent;
+    border: 1px solid var(--color-light-grey);
+    border-radius: var(--border-radius);
+    color: var(--color-light);
+}
+
+.input::placeholder {
+    color: var(--color-light-grey);
+}
+
+.input:hover {
+    border-color: var(--color-light);
+}
+
+.input:focus {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    outline: none;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -53,3 +77,4 @@ h6 {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
