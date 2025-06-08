@@ -802,11 +802,11 @@ svg * {
 }
 .join-us__form-header {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   row-gap: 7px;
 }
-.join-us__form-header__form-header:not(:last-child) {
+.join-us__form-header:not(:last-child) {
   margin-bottom: 52px;
 }
 .join-us__title.centered::after {
@@ -828,4 +828,10 @@ svg * {
   justify-content: center;
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+
+.backdropt-title.centered::after {
+  top: -0.55em;
+  left: 50%;
+  translate: -50% 0;
 }/*# sourceMappingURL=style.css.map */
