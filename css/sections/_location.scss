@@ -1,0 +1,27 @@
+.location {
+    max-width: 1920px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__body {
+        padding: 80px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    &__title:not(:last-child) {
+        margin-bottom: 14px;
+    }
+
+    &__description {
+        max-width: 490px;
+    }
+
+    &__description:not(:last-child) {
+        margin-bottom: 37px;
+    }
+}
