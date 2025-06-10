@@ -931,8 +931,32 @@ svg * {
   color: var(--color-light);
 }
 .family__body {
-  display: flex;
-  justify-content: center;
-  -moz-column-gap: 26px;
-       column-gap: 26px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  padding-inline: 15px;
+}
+
+@media (max-width: 1024px) {
+  .family__body {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .family__header {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  .family__image {
+    width: 320px;
+  }
+}
+@media (max-width: 767px) {
+  .family__body {
+    gap: 18px;
+  }
+  .family__image {
+    width: 290px;
+  }
 }/*# sourceMappingURL=style.css.map */
