@@ -1,0 +1,27 @@
+.family {
+    background-color: var(--color-dark-alternate);
+
+    &__header {
+        padding-top: 132px;
+        padding-bottom: 62px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 7px;
+    }
+
+    &__description {
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.65;
+        text-transform: uppercase;
+        color: var(--color-light);
+    }
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        column-gap: 26px;
+    }
+}
