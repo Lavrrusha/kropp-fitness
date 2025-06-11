@@ -251,10 +251,10 @@
                         <label class="visually-hidden" for="height">Height</label>
                         <input type="number" class="calculate__form-input input" id="height" placeholder="Height / cm">
 
-                         <label class="visually-hidden" for="height">Weight</label>
+                        <label class="visually-hidden" for="height">Weight</label>
                         <input type="number" class="calculate__form-input input" id="weight" placeholder="Weight / kg">
 
-                         <label class="visually-hidden" for="height">Age</label>
+                        <label class="visually-hidden" for="height">Age</label>
                         <input type="number" class="calculate__form-input input" id="age" placeholder="Age">
 
                         <label class="visually-hidden" for="gender">Gender</label>
@@ -278,8 +278,39 @@
                         Calculate
                     </button>
                 </form>
-                <div class="calculate__table-wrapper">
 
+                <div class="calculate__table-wrapper">
+                    <table class="calculate__table">
+                        <thead>
+                            <tr>
+                                <th>BMI</th>
+                                <th>Weight status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Below 18.5</th>
+                                <th>Underweight</th>
+                            </tr>
+                             <tr>
+                                <th>18.5 - 24.9</th>
+                                <th>Healthy</th>
+                            </tr>
+                             <tr>
+                                <th>25.0 - 29.9</th>
+                                <th>Overweight</th>
+                            </tr>
+                             <tr>
+                                <th>30.0 - and Above</th>
+                                <th>Obese</th>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2"><b>BMR</b>  Metabolic Rate / <b>BMI</b>  Body Mass Index</td>
+                            </tr>
+                        </tfoot>
+                    </table>
                 </div>
             </div>
         </section>
