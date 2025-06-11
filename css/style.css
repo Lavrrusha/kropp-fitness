@@ -930,6 +930,9 @@ svg * {
   text-transform: uppercase;
   color: var(--color-light);
 }
+.family__description:not(:last-child) {
+  margin-bottom: 62px;
+}
 .family__body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
