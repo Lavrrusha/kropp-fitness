@@ -51,7 +51,8 @@ h6 {
     color: var(--color-light);
 }
 
-.input::placeholder {
+.input::placeholder,
+select.input:invalid {
     color: var(--color-light-grey);
 }
 
@@ -78,3 +79,13 @@ h6 {
     overflow: hidden;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}

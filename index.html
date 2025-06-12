@@ -242,42 +242,44 @@
             <div class="calculate__inner wrapper">
                 <div class="calculate__body">
                     <h2 class="calculate__title title-medium backdropt-title" data-title="BMI">Input your BMI</h2>
-                </div>
-                <div class="calculate__description">
-                    <p>Duo graece ponderum ne, ei mel aliquando. Pro te tamquam nonumes, nam no nemore epicurei</p>
-                </div>
-                <form class="calculate__form">
-                    <div class="calculate__form-body">
-                        <label class="visually-hidden" for="height">Height</label>
-                        <input type="number" class="calculate__form-input input" id="height" placeholder="Height / cm">
-
-                        <label class="visually-hidden" for="height">Weight</label>
-                        <input type="number" class="calculate__form-input input" id="weight" placeholder="Weight / kg">
-
-                        <label class="visually-hidden" for="height">Age</label>
-                        <input type="number" class="calculate__form-input input" id="age" placeholder="Age">
-
-                        <label class="visually-hidden" for="gender">Gender</label>
-                        <select class="calculate__input input" id="gender">
-                            <option value="" disabled selected>Gender</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-
-                        <label class="visually-hidden" for="activity-factor">Activity factor</label>
-                        <select class="calculate__input input wide" id="activity-factor">
-                            <option value="" disabled selected>Select an activity factor:</option>
-                            <option value="male">1</option>
-                            <option value="female">2</option>
-                            <option value="female">3</option>
-                            <option value="female">4</option>
-                            <option value="female">5</option>
-                        </select>
+                    <div class="calculate__description">
+                        <p>Duo graece ponderum ne, ei mel aliquando. Pro te tamquam nonumes, nam no nemore epicurei</p>
                     </div>
-                    <button class="calculate__button button transparent" type="submit">
-                        Calculate
-                    </button>
-                </form>
+                    <form class="calculate__form">
+                        <div class="calculate__form-body">
+                            <label class="visually-hidden" for="height">Height</label>
+                            <input type="number" class="calculate__form-input input" id="height"
+                                placeholder="Height / cm">
+
+                            <label class="visually-hidden" for="height">Weight</label>
+                            <input type="number" class="calculate__form-input input" id="weight"
+                                placeholder="Weight / kg">
+
+                            <label class="visually-hidden" for="height">Age</label>
+                            <input type="number" class="calculate__form-input input" id="age" placeholder="Age">
+
+                            <label class="visually-hidden" for="gender" >Gender</label>
+                            <select class="calculate__input input" id="gender" required>
+                                <option value="" disabled selected>Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+
+                            <label class="visually-hidden" for="activity-factor">Activity factor</label>
+                            <select class="calculate__input input wide" id="activity-factor" required>
+                                <option value="" disabled selected>Select an activity factor:</option>
+                                <option value="male">1</option>
+                                <option value="female">2</option>
+                                <option value="female">3</option>
+                                <option value="female">4</option>
+                                <option value="female">5</option>
+                            </select>
+                        </div>
+                        <button class="calculate__button button transparent" type="submit">
+                            Calculate
+                        </button>
+                    </form>
+                </div>
 
                 <div class="calculate__table-wrapper">
                     <table class="calculate__table">
@@ -292,22 +294,22 @@
                                 <th>Below 18.5</th>
                                 <th>Underweight</th>
                             </tr>
-                             <tr>
+                            <tr>
                                 <th>18.5 - 24.9</th>
                                 <th>Healthy</th>
                             </tr>
-                             <tr>
+                            <tr>
                                 <th>25.0 - 29.9</th>
                                 <th>Overweight</th>
                             </tr>
-                             <tr>
+                            <tr>
                                 <th>30.0 - and Above</th>
                                 <th>Obese</th>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="2"><b>BMR</b>  Metabolic Rate / <b>BMI</b>  Body Mass Index</td>
+                                <td colspan="2"><b>BMR</b> Metabolic Rate / <b>BMI</b> Body Mass Index</td>
                             </tr>
                         </tfoot>
                     </table>

@@ -1,0 +1,41 @@
+.calculate {
+    padding-block: 146px;
+    background-color: var(--color-dark-alternate);
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        column-gap: 36px;
+    }
+
+    &__body {
+        max-width: 627px;
+        flex-grow: 1;
+    }
+
+    &__form-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px 30px;
+    }
+
+    &__title:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        max-width: 385px;
+    }
+
+    &__description:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+      &__form-body:not(:last-child) {
+        margin-bottom: 26px;
+    }
+
+    &__input.wide {
+        grid-column: -1 / 1;
+    }
+}
