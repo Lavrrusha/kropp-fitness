@@ -31,11 +31,65 @@
         margin-bottom: 30px;
     }
 
-      &__form-body:not(:last-child) {
+    &__form-body:not(:last-child) {
         margin-bottom: 26px;
     }
 
     &__input.wide {
         grid-column: -1 / 1;
+    }
+
+    &__table-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 610px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__table {
+        position: relative;
+        border-collapse: collapse;
+    }
+
+    &__table :is(td, th) {
+        padding-right: 30px;
+    }
+
+    &__table :is(td, th):not(:first-child) {
+        padding-left: 30px;
+    }
+
+    &__table th {
+        padding-block: 20px;
+        text-align: left;
+        text-transform: uppercase;
+        color: var(--color-light);
+    }
+
+    &__table td {
+        padding-block: 14px;
+    }
+
+    &__table tfoot {
+        color: var(--color-light);
+    }
+
+    &__table tfoot td {
+        padding-top: 33px;
+        padding-bottom: 0;
+    }
+
+    &__table-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        width: 100%;
+        aspect-ratio: 1;
+        background-color: var(--color-dark);
+        border-radius: 50%;
     }
 }

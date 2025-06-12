@@ -1008,4 +1008,49 @@ svg * {
 }
 .calculate__input.wide {
   grid-column: -1/1;
+}
+.calculate__table-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 610px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculate__table {
+  position: relative;
+  border-collapse: collapse;
+}
+.calculate__table :is(td, th) {
+  padding-right: 30px;
+}
+.calculate__table :is(td, th):not(:first-child) {
+  padding-left: 30px;
+}
+.calculate__table th {
+  padding-block: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--color-light);
+}
+.calculate__table td {
+  padding-block: 14px;
+}
+.calculate__table tfoot {
+  color: var(--color-light);
+}
+.calculate__table tfoot td {
+  padding-top: 33px;
+  padding-bottom: 0;
+}
+.calculate__table-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: var(--color-dark);
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
