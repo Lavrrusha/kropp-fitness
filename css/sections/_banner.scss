@@ -80,6 +80,11 @@
 }
 
 @media (max-width: 767px) {
+
+    .banner {
+          min-height: calc(80vh - var(--header-height));
+    }
+
     .banner__info {
         margin-bottom: 5px;
     }
