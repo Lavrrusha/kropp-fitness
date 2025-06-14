@@ -761,7 +761,7 @@ svg * {
 .join-us__video-wrapper {
   position: relative;
   padding: 150px 30px;
-  background: url(.../image/join-us-bg.jpg) center/cover no-repeat var(--color-dark-alternate);
+  background: url(../image/join-us-bg.jpg) center/cover no-repeat var(--color-dark-alternate);
   display: flex;
   justify-content: center;
   align-items: center;
