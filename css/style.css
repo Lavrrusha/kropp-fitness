@@ -646,9 +646,6 @@ svg * {
   }
 }
 @media (max-width: 767px) {
-  .banner {
-    padding: 105px 70px;
-  }
   .banner__info {
     margin-bottom: 5px;
   }
@@ -1074,4 +1071,38 @@ svg * {
   aspect-ratio: 1;
   background-color: var(--color-dark);
   border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  .calculate {
+    padding-block: 100px;
+  }
+  .calculate__form-body {
+    grid-template-columns: 1fr;
+  }
+  .calculate__button {
+    width: 100%;
+  }
+  .calculate__inner {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .calculate__table :is(td, th) {
+    padding-block: 10px;
+  }
+  .calculate__table tfoot td {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .calculate {
+    padding-block: 60px;
+  }
+  .calculate__inner {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .calculate__table-wrapper::before {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
