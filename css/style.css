@@ -821,8 +821,8 @@ svg * {
   aspect-ratio: 1;
   margin-left: 0.14em;
   display: inline-block;
-  background: url(../icon/bold-arrow-top-right.svg) center/contain no-repeat;
-  scale: 1, -1;
+  background: url("../icon/bold-arrow-down-right.svg") center/contain no-repeat;
+  scale: 1 -1;
 }
 .join-us__title:not(:last-child) {
   margin-bottom: 130px;
@@ -1105,4 +1105,91 @@ svg * {
   .calculate__table-wrapper::before {
     display: none;
   }
+}
+.footer__header, .footer__body {
+  display: grid;
+  -moz-column-gap: 63px;
+       column-gap: 63px;
+}
+.footer__header {
+  grid-template-columns: 20.77% auto;
+}
+.footer__header:not(:last-child) {
+  margin-bottom: 60px;
+}
+.footer__body {
+  grid-template-columns: 20.77% repeat(3, 1fr);
+}
+.footer__description {
+  text-transform: uppercase;
+  max-width: 740px;
+  color: var(--color-light);
+}
+.footer__description a {
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: var(--color-light-grey);
+  background-color: var(--color-dark-grey);
+  padding: 2px 10px;
+  border-radius: 30px;
+}
+.footer__description a:hover {
+  text-decoration: none;
+  color: var(--color-dark-grey);
+  background-color: var(--color-light-grey);
+}
+.footer__main {
+  padding-top: 140px;
+  padding-bottom: 160px;
+}
+.footer__extra {
+  padding-block: 15px;
+  background-color: var(--color-dark-alternate);
+}
+.footer__column-title {
+  font-size: clamp(18px, 1.15vw, 22px);
+}
+.footer__column-title:not(:last-child) {
+  margin-bottom: 15px;
+}
+.footer__schedule:not(:last-child) {
+  margin-bottom: 13px;
+}
+.footer__address:not(:last-child) {
+  margin-bottom: 35px;
+}
+.footer__column-title.has-arrow::after {
+  content: "";
+  height: 0.74em;
+  aspect-ratio: 1;
+  margin-left: 0.5em;
+  display: inline-block;
+  background: url("../../icon/bold-arrow-down-right.svg") center/contain no-repeat;
+  scale: -1 1;
+}
+.footer__subscribe {
+  position: relative;
+}
+.footer__subscribe:not(:last-child) {
+  margin-bottom: 50px;
+}
+.footer__subscribe-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  aspect-ratio: 1;
+  background-color: transparent;
+  background: url("../icon/arrow-top-right.svg") center/70% no-repeat;
+  border: var(--border);
+  border-radius: 50%;
+}
+.footer__subscribe-button:hover {
+  background-color: var(--color-light-grey);
+}
+.footer__subscribe-input {
+  padding-right: 70px;
+}
+.footer__subscribe-input:focus {
+  background-color: var(--color-light-grey);
 }/*# sourceMappingURL=style.css.map */
