@@ -81,6 +81,11 @@
         scale: -1 1;
     }
 
+    &__soc1als-list{
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__subscribe {
         position: relative;
     }

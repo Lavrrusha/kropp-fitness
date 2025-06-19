@@ -1173,6 +1173,10 @@ svg * {
   background: url("../../icon/bold-arrow-down-right.svg") center/contain no-repeat;
   scale: -1 1;
 }
+.footer__soc1als-list {
+  display: flex;
+  justify-content: space-between;
+}
 .footer__subscribe {
   position: relative;
 }
